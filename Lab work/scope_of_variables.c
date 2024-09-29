@@ -9,7 +9,7 @@ main()
 {
 	extern int a, b; // we use extern keyword to import global variables
 	printf("These are global variables: \n");
-	printf("Enter the valude of a and b \n"); 
+	printf("Enter the value of a and b \n"); 
 	scanf("%d %d",&a,&b);
 	char name1[] = "Cristiano Ronaldo", name2[] = "Lionel Messi"; // here, we've imported name1 and name2 variables
 	
