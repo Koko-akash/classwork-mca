@@ -1,3 +1,5 @@
+// In this program we try different string functions from the string.h header file
+// Author: Akash Phukan
 #include<stdio.h>
 #include<string.h>
 main()
