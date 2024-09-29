@@ -1,3 +1,5 @@
+// concationation of two strings
+// author: akash phukan
 #include <stdio.h>
 #include <string.h>
 
