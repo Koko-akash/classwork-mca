@@ -33,7 +33,7 @@ main()
 	// Compare str5 and str7, and print the result
 	printf("\n %d\n", strcmp(str5, str7));  // Returns 1 (the strings are not equal)
 	
-	// Converts string to uppdercase
+	// Converts string to uppercase
 	char str8[] = "fried noodles";
 	printf("\n %s", strupr(str8));
 	
