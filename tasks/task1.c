@@ -17,7 +17,6 @@ main ()
 	// entering student info
 	printf("Enter the student details: \n");
 	printf("Enter the name of the student: \n");
-	// scanf("%s",std.name);
 	gets(std.name);
 	printf("Enter age: \n");
 	scanf("%d",&std.age);
