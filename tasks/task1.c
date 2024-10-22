@@ -28,6 +28,7 @@ main ()
 
 display()
 {
+	printf("\nStudent Details: \n");
 	printf("Student name: %s \n",std.name);
 	printf("Student age: %d \n",std.age);
 	printf("Student grade: %s \n",std.grade);
