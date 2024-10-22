@@ -1,5 +1,5 @@
 // Code to creating a structure for student
-// author: Akashb Phukan, date: 22/1024 
+// author: Akashb Phukan, date: 22/10/24 
 #include<stdio.h>
 #include<stdlib.h>
 display(); // declaring function prototype
