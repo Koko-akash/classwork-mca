@@ -1,8 +1,8 @@
 // Code to swap two numbers using call by val and call by reference
 // author: Akash Phukan, date: 22/10/24
 #include<stdio.h>
-swapA(int, int);
-swapB(int *, int *);
+swapA(int, int); // declaring function protoype
+swapB(int *, int *); // declaring function prototype
 main()
 {
 	int x, y, a, b; // declaration of variables
