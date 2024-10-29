@@ -11,7 +11,7 @@ union Marks
 
 main()
 {
-	// creating a union variable marks to access the Union data members
+	// creating a union variable to access the Union data members
 	union Marks marks;
 	// entering Student marks: 
 	printf("Enter the Student marks: \n");
