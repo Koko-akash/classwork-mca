@@ -1,5 +1,5 @@
 // Unions vs Structures
-// date: 24/10/24
+// author: Akash Phukan, date: 24/10/24
 #include<stdio.h>
 
 union Car 
