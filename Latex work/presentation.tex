@@ -1,0 +1,241 @@
+\documentclass[13pt]{beamer}
+\usetheme{Boadilla}
+\usetheme{CambridgeUS}
+\usecolortheme{dolphin}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+% set colors
+\definecolor{myNewColorA}{RGB}{126,12,110}
+\definecolor{myNewColorB}{RGB}{165,85,154}
+\definecolor{myNewColorC}{RGB}{203,158,197}
+\setbeamercolor*{palette primary}{bg=myNewColorC}
+\setbeamercolor*{palette secondary}{bg=myNewColorB, fg = white}
+\setbeamercolor*{palette tertiary}{bg=myNewColorA, fg = white}
+\setbeamercolor*{titlelike}{fg=myNewColorA}
+\setbeamercolor*{title}{bg=myNewColorA, fg = white}
+\setbeamercolor*{item}{fg=myNewColorA}
+\setbeamercolor*{caption name}{fg=myNewColorA}
+\usefonttheme{professionalfonts}
+\usepackage{natbib}
+\usepackage{hyperref}
+%
+
+\title{Structures}
+\author{Akash Phukan}
+\institute{Roll No: 05, MCA 1st SEM}
+\date{07-11-2024}
+
+\begin{document}
+\maketitle
+
+\begin{frame}{Contents}
+\begin{enumerate}
+    \item What are structures?
+    \item Why do we need them?
+    \item Syntax:
+    \begin{itemize}
+        \item Structure Declaration
+        \item Structure Definition
+        \item Access Structure Members
+    \end{itemize}
+    \item Real World Example.
+    \item Example in code.
+    \item Conclusion.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{What is a Structure?}
+\begin{itemize}
+    \item The structure in C is a user-defined data type that can be used to group heterogeneous items (of possibly different types) into a single type. 
+    
+    \item The struct keyword is used to define the structure in the C programming language.  
+    
+    \item The items in the structure are called its member and they can be of any valid data type.(Such as, int, char, float etc)
+
+    \item C allows Nesting of structures. They can be done in two ways:
+    \begin{itemize}
+        \item By separate nested structure. (creating instances)
+        \item By embedded nested structure. (structure in other structure)
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Why do we need structure?}
+\begin{itemize}
+    \item Structure is a user-defined data in C language will allows us to combine data of different types together. 
+    \item Structure helps to construct a complex data type which is more meaningful.
+    \item C structures can be used to store huge data.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Syntax}
+{\textbf{Structure Declaration}}
+\begin{itemize}
+    \item We have to declare structure in C before using it in our program. 
+    \item In structure declaration, we specify its member variables along with their datatype.
+    \item We can use the struct keyword to declare the structure in C using the following syntax:
+\end{itemize}
+\begin{block}{Syntax:}
+    struct structureName \{ \\
+    dataType memberName1; \\
+    dataType memberName1; \\
+    .... \\
+\};
+\end{block}
+\end{frame}
+
+\begin{frame}{Syntax}
+{\textbf{Structure Definition}}
+\begin{itemize}
+    \item To use structure in our program, we have to define its instance. We can do that by creating variables of the structure type.
+    \item We can define structure variables using two methods.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Syntax}
+{\textbf{Structure Definition}}
+\begin{block}{1. Structure Variable Declaration with Structure Template}
+    struct StructureName \{ \\
+    dataType memberName1; \\
+    dataType memberName1; \\
+    .... \\
+    .... \\
+\}variable1, varaible2, ...;
+\end{block} 
+\begin{block}{2. Structure Variable Declaration after Structure Template}
+    // structure declared beforehand \\
+struct structureName variable1, variable2, .......;
+\end{block}
+\end{frame}
+
+\begin{frame}{Syntax}
+{\textbf{Access Structure Members}} 
+\begin{itemize}
+    \item We can access structure members by using the ( . ) dot operator.
+\end{itemize}
+\begin{block}{Syntax}
+    structureName.member1; \\
+    strcutureName.member2;
+\end{block}
+\end{frame}
+
+\begin{frame}{Real World Example}
+\begin{itemize}
+    \item For this example, let us consider a Garage.
+    \item In the garage we want to store 3 cars(say).
+\end{itemize}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{presentation/example.png}
+    \caption{Different cars that we want to store in the garage}
+    \label{fig:enter-label}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+    Each car will be an entity in the garage. And each car will have different  characteristics. \\
+    To better understand this, take a look at the following figures: \\
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\linewidth]{presentation/car.png}
+        \caption{A car and its characteristics}
+        \label{fig:1}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\linewidth]{presentation/garage.png}
+        \caption{A Garage containing Cars}
+        \label{fig:2}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Example in code}
+    \begin{itemize}
+        \item Let us see how the above real life example would look like when translated it into code.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    Here we are creating a Structure Car, which will have heterogeneous data members. \\
+    In other words Structure Declaration.
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\linewidth]{presentation/structure car.png}
+        \caption{Structure for a Car}
+        \label{fig:3}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    In the main function, we will be creating an array variable for our use-defined data structure Car. Through the use of this array variable we can access different members of the structure. \\
+    In computing terms, its called Structure Definition and Access Structure Members.
+\end{frame}
+
+\begin{frame}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1.0\linewidth]{presentation/main fn.png}
+        \caption{Main Function}
+        \label{fig:4}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \begin{center}
+    \begin{large}
+    \textcolor{magenta}{\textbf{Then we compile and run our program...}}
+    \end{large}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    Output: \\
+    When we run the code we will get this output. \\
+    Then we enter our data. \\
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\linewidth]{presentation/op input.png}
+        \caption{Output}
+        \label{fig:5}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    After we have entered our data, we click enter. \\
+    And we get this output. \\
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.6\linewidth]{presentation/op output.png}
+        \caption{Output}
+        \label{fig:6}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \begin{itemize}
+        \item From the above example, we can say that Structures makes it way easier to manage big data of different types.
+        \item The code for the management system was also readable and not messy. 
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Conclusion}
+    \begin{itemize}
+        \item Structures help organize data faster, which can increase productivity.
+        \item Structures make code easier to read.
+        \item Structures can store data of different types, such as int, float, and char, under one name.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \begin{center}
+    \begin{large}
+    \textcolor{magenta}{\textbf{Thank You!}}
+    \end{large}
+    \end{center}
+\end{frame}
+\end{document}
